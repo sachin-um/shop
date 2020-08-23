@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
    <children>
       <Label layoutX="220.0" prefHeight="53.0" prefWidth="286.0" text="Customer Form" textFill="#3926e4">
@@ -25,10 +24,10 @@
       <TextField layoutX="3.0" layoutY="90.0" prefHeight="25.0" prefWidth="580.0" promptText="Search here" />
       <TableView fx:id="tbl" layoutX="2.0" layoutY="130.0" prefHeight="268.0" prefWidth="697.0">
         <columns>
-          <TableColumn fx:id="colid" prefWidth="111.0" text="Customer ID" />
-          <TableColumn fx:id="colname" prefWidth="168.0" text="Name" />
-            <TableColumn fx:id="coladdress" prefWidth="265.0" text="Address" />
-            <TableColumn fx:id="colsalary" prefWidth="151.0" text="Salary" />
+          <TableColumn fx:id="colname" prefWidth="212.0" text="Name" />
+            <TableColumn fx:id="coladdress" prefWidth="221.0" text="Address" />
+            <TableColumn fx:id="colsalary" prefWidth="154.0" text="Salary" />
+            <TableColumn fx:id="colop" prefWidth="109.0" text="Oparator" />
         </columns>
       </TableView>
    </children>

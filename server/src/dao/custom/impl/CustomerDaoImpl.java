@@ -17,22 +17,25 @@ public  class CustomerDaoImpl implements CustomerDao {
 
     @Override
     public boolean update(Customer customer) throws Exception {
-        return false;
+        session.merge(customer);
+        return true;
     }
 
     @Override
     public Customer get(String s) throws Exception {
-        return null;
+        return session.get(Customer.class,s);
     }
 
     @Override
     public boolean delete(String s) throws Exception {
-        return false;
+        session.delete(session.load(Customer.class, s));
+        return true;
     }
 
     @Override
     public List<Customer> getAll() throws Exception {
-        return null;
+        return session.createQuery("FROM Customer").list();
+
     }
 
     @Override
